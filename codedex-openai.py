@@ -21,6 +21,7 @@ def generate_blog(blog_topic):
 
 keep_writing = True
 
+# Keep writing paragraph until user stops
 while keep_writing:
   write_paragraph = input('Write a paragraph? Y for yes, anything else for no')
   if(write_paragraph == "Y"):
