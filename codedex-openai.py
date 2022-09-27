@@ -1,8 +1,10 @@
-import os
 import openai
+from dotenv import dotenv_values
+
+config = dotenv_values(".env")
 
 # Set API key
-openai.api_key = os.getenv('OPENAI_API_KEY')
+openai.api_key = config["API_KEY"]
 
 def generate_blog(paragraph_topic):
   # Makes a http request and returns an object
